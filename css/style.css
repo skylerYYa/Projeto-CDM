@@ -47,7 +47,8 @@ button {
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 20px;
+    width: 350px;
     transition: background-color 0.3s ease;
 }
 
@@ -68,20 +69,4 @@ a:hover {
     text-decoration: underline;
 }
 
-.button-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-}
 
-.button-grid button {
-    background-color: #4CAF50; 
-}
-
-.button-grid button:hover {
-    background-color: #388E3C; 
-}
-
-.button-grid button:last-child {
-    grid-column: span 2;
-}
