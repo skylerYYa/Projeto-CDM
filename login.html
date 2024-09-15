@@ -6,8 +6,6 @@
     <title>CDM</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="imagem/png" href="img/fieblogo3.png">
-    <form action="/login.html" method="POST">
-
 </head>
 <body>
     <div class="container">
@@ -15,7 +13,7 @@
             <h2>Login</h2>
             <form id="loginForm">
                 <input type="text" id="u" placeholder="RM" required>
-                <input type="password" id="password" placeholder="senha" required>
+                <input type="password" id="password" placeholder="Senha" required>
                 <button type="submit">Entrar</button>
             </form>
             <a href="#" id="forgotPassword">Esqueceu a senha?</a>
@@ -33,13 +31,14 @@
             <h2>Cadastro</h2>
             <form id="registerForm">
                 <input type="text" id="newUsername" placeholder="RM" required>
-                <input type="email" id="newEmail" placeholder="email" required>
-                <input type="password" id="newPassword" placeholder="senha" required>
+                <input type="email" id="newEmail" placeholder="Email Institucional" required>
+                <input type="password" id="newPassword" placeholder="Crie sua senha" required>
+                <input type="password" id="newPassword" placeholder="Confirme a senha" required>
                 <button type="submit">Cadastrar</button>
             </form>
             <a href="#" id="backToLoginFromRegister">Voltar ao Login</a>
         </div>
     </div>
-    <script src="models/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

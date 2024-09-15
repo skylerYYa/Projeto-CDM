@@ -1,7 +1,0 @@
-{
-  "dependencies": {
-    "body-parser": "^1.20.3",
-    "https": "^1.0.0",
-    "mssql": "^11.0.1"
-  }
-}
