@@ -1,3 +1,12 @@
+<?php 
+session_start();
+if($_SESSION["acesso"]==false){
+    header("location:index.php");
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -12,8 +21,9 @@
     <div class="container">
         <h1>Início</h1>
         <div class="button-grid">
-            <button onclick="navigateTo('page1.html')">Cardápio</button>
-            <button onclick="navigateTo('page2.html')">Feedback</button>
+            <button onclick="navigateTo('index.php')">Sair</button>
+            <button onclick="navigateTo('page1.php')">Cardápio</button>
+            <button onclick="navigateTo('page2.php')">Feedback</button>
             
             
         </div>

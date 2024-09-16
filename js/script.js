@@ -22,7 +22,7 @@ document.getElementById('backToLoginFromRegister').addEventListener('click', fun
     document.querySelector('.login-form').style.display = 'block';
 });
 
-document.getElementById('loginForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-    navigateTo('entrada.html');
-});
+//document.getElementById('loginForm').addEventListener('submit', function(event) {
+    //event.preventDefault();
+    //navigateTo('login.php');
+//});

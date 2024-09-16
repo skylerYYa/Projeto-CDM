@@ -1,3 +1,20 @@
+<?php
+session_start();
+$email=$_REQUEST["email"]??"";
+$senha=$_REQUEST["senha"]??"";
+echo $email;
+echo $senha;
+if($email== "fulano@gmail.com" && $senha== "123456"){
+    $_SESSION["acesso"]=true;
+    header("location:entrada.php");
+    exit();
+}
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -11,9 +28,9 @@
     <div class="container">
         <div class="login-form">
             <h2>Login</h2>
-            <form id="loginForm">
-                <input type="text" id="u" placeholder="RM" required>
-                <input type="password" id="password" placeholder="Senha" required>
+            <form id="loginForm" method="POST" action="index.php">
+                <input name="email" type="text" id="u" placeholder="Email" required>
+                <input name="senha" type="password" id="password" placeholder="Senha" required>
                 <button type="submit">Entrar</button>
             </form>
             <a href="#" id="forgotPassword">Esqueceu a senha?</a>
@@ -42,3 +59,8 @@
     <script src="js/script.js"></script>
 </body>
 </html>
+<?php
+session_destroy();
+
+
+?>

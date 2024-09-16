@@ -1,3 +1,14 @@
+<?php 
+session_start();
+if($_SESSION["acesso"]==false){
+    header("location:index.php");
+}
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -29,7 +40,7 @@
             <div id="aAvaliar">
                 <h3>A Avaliar</h3>
                 <ul></ul>
-                <button onclick="navigateTo('entrada.html')">Voltar</button>
+                <button onclick="navigateTo('entrada.php')">Voltar</button>
             </div>
         </div>
     </div>
